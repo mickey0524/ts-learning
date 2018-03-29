@@ -1,0 +1,17 @@
+{
+  "name": "hello-typescript",
+  "version": "0.0.1",
+  "description": "Learning TypeScript.",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "author": "mickey0524",
+  "license": "ISC",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+  
+  }
+}
