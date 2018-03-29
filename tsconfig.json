@@ -3,7 +3,9 @@
     "outDir": "./built",
     "allowJs": true,
     "target": "es5",
-    // "module": "amd",
+    "removeComments": true,
+    "strictNullChecks": true,
+    "module": "commonjs",
     // "sourceMap": true
   },
   "include": [
