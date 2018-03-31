@@ -16,3 +16,17 @@ num = 'asdasd';
 let anyArr: any[] = [1, 'asd', false];
 console.log(anyArr);
 
+let numArr: Array<number> = [1, 2, 3] // 利用泛型定义数组
+
+interface InterfaceArr {
+  [index: number]: string|number;
+}
+
+let interfaceArr: InterfaceArr = [1, 2, 'asd']; // 利用接口定义数组 
+
+// undefined是number的子集，如果不配置strictNullChecks：true是可以赋值
+// let n: number = undefined;
+
+// 类型推论，如果不设置变量的类型，ts会进行类型推论
+let str1 = 'i am a string'; // 如果不赋值，会被推论成any
+// str1 = 1; 类型推论成str，不能赋值为number

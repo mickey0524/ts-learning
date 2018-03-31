@@ -2,7 +2,7 @@ interface StuParam {
   name: string;
   age?: number;
   readonly mother?: string; // 只读属性
-  [propName: string]: any; // 还存在很多其他的变量
+  [propName: string]: any; // 还存在很多其他的变量, 一旦定义了任意属性, 那么确定属性和可选属性都必须是它的子属性
 }
 
 function stu(stuParam: StuParam) {
