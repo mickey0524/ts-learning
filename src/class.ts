@@ -37,3 +37,42 @@ function reverse(x: number | string): number | string {
     return x.split('').reverse().join('');
   }
 }
+
+
+class Student {
+  private name; // 私有属性，不能被子类访问
+  protected age; // 保护属性，可以在子类中被访问
+  public school; // 公有属性，可以在任何地方访问
+  public constructor(name, age, school) {
+    this.name = name;
+    this.age = age;
+    this.school = school;
+  }
+}
+
+class FreshMan extends Student {
+  public constructor(name, age, school) {
+    super(name, age, school);
+    // console.log(this.name); 
+  }
+}
+
+
+/**
+ * ts中的抽象类
+ */
+abstract class Animal {
+  public name;
+  public constructor(name) {
+    this.name = name;
+  }
+  public abstract sayHi();
+}
+
+class Cat extends Animal {
+  public sayHi() {
+    console.log(`Meow, My name is ${this.name}`);
+  }
+}
+
+let cat = new Cat('Tom');
